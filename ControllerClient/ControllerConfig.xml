@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--xsi:noNamespaceSchemaLocation="ControllerSchema.xsd"
+xsi:schemaLocation="http://tempuri.org/ControllerSchema.xsd ControllerSchema.xsd">
+-->
+<config 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="ControllerSchema.xsd">
+  <!-- Hold IP and Port information for previous successful connections -->
+  <connectHistory>
+    <entry ip="127.0.0.1" port="5757"></entry>
+  </connectHistory>
+
+  <!-- Hold Keys that you are allowed to be keybound -->
+  <keyFilter>
+    <key><Page_Up/></key>
+    <key><Page_Down/></key>
+    <key><End/></key>
+    <key><Home/></key>
+    <key><Insert/></key>
+    <key><Delete/></key>
+    <key><Arrow_Left/></key>
+    <key><Arrow_Up/></key>
+    <key><Arrow_Right/></key>
+    <key><Arrow_Down/></key>
+    <key><Number_0/></key>
+    <key><Number_1/></key>
+    <key><Number_2/></key>
+    <key><Number_3/></key>
+    <key><Number_4/></key>
+    <key><Number_5/></key>
+    <key><Number_6/></key>
+    <key><Number_7/></key>
+    <key><Number_8/></key>
+    <key><Number_9/></key>
+    <key><A/></key>
+    <key><B/></key>
+    <key><C/></key>
+    <key><D/></key>
+    <key><E/></key>
+    <key><F/></key>
+    <key><G/></key>
+    <key><H/></key>
+    <key><I/></key>
+    <key><J/></key>
+    <key><K/></key>
+    <key><L/></key>
+    <key><M/></key>
+    <key><N/></key>
+    <key><O/></key>
+    <key><P/></key>
+    <key><Q/></key>
+    <key><R/></key>
+    <key><S/></key>
+    <key><T/></key>
+    <key><U/></key>
+    <key><V/></key>
+    <key><W/></key>
+    <key><X/></key>
+    <key><Y/></key>
+    <key><Z/></key>
+    <key><Numpad_0/></key>
+    <key><Numpad_1/></key>
+    <key><Numpad_2/></key>
+    <key><Numpad_3/></key>
+    <key><Numpad_4/></key>
+    <key><Numpad_5/></key>
+    <key><Numpad_6/></key>
+    <key><Numpad_7/></key>
+    <key><Numpad_8/></key>
+    <key><Numpad_9/></key>
+    <key><Backspace/></key>
+    <key><Tab/></key>
+    <key><Enter/></key>
+    <key><CapsLock/></key>
+    <key><Escape/></key>
+    <key><Space/></key>
+    <key><Alt_Left/></key>
+    <key><Alt_Right/></key>
+    <key><Control_Left/></key>
+    <key><Control_Right/></key>
+    <key><Shift_Left/></key>
+    <key><Shift_Right/></key>
+    <key><Add/></key>
+    <key><Subtract/></key>
+    <key><Oem_Period/></key>
+    <key><Oem_Backslash/></key>
+    <key><Oem_Bracket_Close/></key>
+    <key><Oem_Comma/></key>
+    <key><Oem_Minus/></key>
+    <key><Oem_Bracket_Open/></key>
+    <key><Oem_Period/></key>
+    <key><Oem_Pipe/></key>
+    <key><Oem_Plus/></key>
+    <key><Oem_Question/></key>
+    <key><Oem_Quote/></key>
+    <key><Oem_Semicolon/></key>
+    <key><Oem_Tilde/></key>
+  </keyFilter>
+
+  <!-- Hold saved keybinds -->
+  <keybinds>
+    <entry>
+      <control><Left_Joystick_Up/></control>
+      <key><W/></key>
+    </entry>
+      <entry>
+      <control><Left_Joystick_Left/></control>
+      <key><A/></key>
+    </entry>
+      <entry>
+      <control><Left_Joystick_Down/></control>
+      <key><S/></key>
+    </entry>
+      <entry>
+      <control><Left_Joystick_Right/></control>
+      <key><D/></key>
+    </entry>
+  </keybinds>
+
+ </config>

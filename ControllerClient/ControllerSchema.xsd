@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    elementFormDefault="qualified"
+    attributeFormDefault ="unqualified"
+    xmlns:mstns="http://tempuri.org/ControllerSchema.xsd"
+    xmlns="http://tempuri.org/ControllerSchema.xsd"
+    targetNamespace="http://tempuri.org/ControllerSchema.xsd"
+
+-->
+
+<xs:schema id="ControllerSchema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  
+  <xs:complexType name = "controlbase">
+    <xs:choice>
+      <xs:element name="None" type="xs:int" fixed="0" minOccurs="0"></xs:element>
+      <xs:element name="Left_Joystick_Up" type="xs:int" fixed="1" minOccurs="0"></xs:element>
+      <xs:element name="Left_Joystick_Left" type="xs:int" fixed="2" minOccurs="0"></xs:element>
+      <xs:element name="Left_Joystick_Down" type="xs:int" fixed="3" minOccurs="0"></xs:element>
+      <xs:element name="Left_Joystick_Right" type="xs:int" fixed="4" minOccurs="0"></xs:element>
+      <xs:element name="Left_Joystick_Press" type="xs:int" fixed="5" minOccurs="0"></xs:element>
+      <xs:element name="Right_Joystick_Up" type="xs:int" fixed="6" minOccurs="0"></xs:element>
+      <xs:element name="Right_Joystick_Left" type="xs:int" fixed="7" minOccurs="0"></xs:element>
+      <xs:element name="Right_Joystick_Down" type="xs:int" fixed="8" minOccurs="0"></xs:element>
+      <xs:element name="Right_Joystick_Right" type="xs:int" fixed="9" minOccurs="0"></xs:element>
+      <xs:element name="Right_Joystick_Press" type="xs:int" fixed="10" minOccurs="0"></xs:element>
+      <xs:element name="Dpad_Up" type="xs:int" fixed="11" minOccurs="0"></xs:element>
+      <xs:element name="Dpad_Left" type="xs:int" fixed="12" minOccurs="0"></xs:element>
+      <xs:element name="Dpad_Down" type="xs:int" fixed="13" minOccurs="0"></xs:element>
+      <xs:element name="Dpad_Right" type="xs:int" fixed="14" minOccurs="0"></xs:element>
+      <xs:element name="Button_X" type="xs:int" fixed="15" minOccurs="0"></xs:element>
+      <xs:element name="Button_Triangle" type="xs:int" fixed="16" minOccurs="0"></xs:element>
+      <xs:element name="Button_Square" type="xs:int" fixed="17" minOccurs="0"></xs:element>
+      <xs:element name="Button_Circle" type="xs:int" fixed="18" minOccurs="0"></xs:element>
+      <xs:element name="Shoulder_Left" type="xs:int" fixed="19" minOccurs="0"></xs:element>
+      <xs:element name="Shoulder_Right" type="xs:int" fixed="20" minOccurs="0"></xs:element>
+      <xs:element name="Trigger_Left" type="xs:int" fixed="21" minOccurs="0"></xs:element>
+      <xs:element name="Trigger_Right" type="xs:int" fixed="22" minOccurs="0"></xs:element>
+      <xs:element name="Button_Share" type="xs:int" fixed="23" minOccurs="0"></xs:element>
+      <xs:element name="Button_Options" type="xs:int" fixed="24" minOccurs="0"></xs:element>
+      <xs:element name="Button_PS" type="xs:int" fixed="25" minOccurs="0"></xs:element>
+      <xs:element name="TouchPad_Press" type="xs:int" fixed="26" minOccurs="0"></xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name = "keybase">
+    <xs:choice>
+      <xs:element name="None" type="xs:int" fixed="0" minOccurs="0"></xs:element>
+      <xs:element name="Cancel" type="xs:int" fixed="1" minOccurs="0"></xs:element>
+      <xs:element name="Backspace" type="xs:int" fixed="2" minOccurs="0"></xs:element>
+      <xs:element name="Tab" type="xs:int" fixed="3" minOccurs="0"></xs:element>
+      <xs:element name="LineFeed" type="xs:int" fixed="4" minOccurs="0"></xs:element>
+      <xs:element name="Clear" type="xs:int" fixed="5" minOccurs="0"></xs:element>
+      <xs:element name="Enter" type="xs:int" fixed="6" minOccurs="0"></xs:element>
+      <xs:element name="Pause" type="xs:int" fixed="7" minOccurs="0"></xs:element>
+      <xs:element name="Capital" type="xs:int" fixed="8" minOccurs="0"></xs:element>
+      <xs:element name="CapsLock" type="xs:int" fixed="8" minOccurs="0"></xs:element>
+      <xs:element name="Kana_Mode" type="xs:int" fixed="9" minOccurs="0"></xs:element>
+      <xs:element name="Hangul_Mode" type="xs:int" fixed="9" minOccurs="0"></xs:element>
+      <xs:element name="Junja_Mode" type="xs:int" fixed="10" minOccurs="0"></xs:element>
+      <xs:element name="Hanja_Mode" type="xs:int" fixed="12" minOccurs="0"></xs:element>
+      <xs:element name="Kanji_Mode" type="xs:int" fixed="12" minOccurs="0"></xs:element>
+      <xs:element name="Escape" type="xs:int" fixed="13" minOccurs="0"></xs:element>
+      <xs:element name="Ime_Convert" type="xs:int" fixed="14" minOccurs="0"></xs:element>
+      <xs:element name="Ime_NonConvert" type="xs:int" fixed="15" minOccurs="0"></xs:element>
+      <xs:element name="Ime_Accept" type="xs:int" fixed="16" minOccurs="0"></xs:element>
+      <xs:element name="Ime_Modechange" type="xs:int" fixed="17" minOccurs="0"></xs:element>
+      <xs:element name="Space" type="xs:int" fixed="18" minOccurs="0"></xs:element>
+      <xs:element name="Prior" type="xs:int" fixed="19" minOccurs="0"></xs:element>
+      <xs:element name="Page_Up" type="xs:int" fixed="19" minOccurs="0"></xs:element>
+      <xs:element name="Next" type="xs:int" fixed="20" minOccurs="0"></xs:element>
+      <xs:element name="Page_Down" type="xs:int" fixed="20" minOccurs="0"></xs:element>
+      <xs:element name="End" type="xs:int" fixed="21" minOccurs="0"></xs:element>
+      <xs:element name="Home" type="xs:int" fixed="22" minOccurs="0"></xs:element>
+      <xs:element name="Arrow_Left" type="xs:int" fixed="23" minOccurs="0"></xs:element>
+      <xs:element name="Arrow_Up" type="xs:int" fixed="24" minOccurs="0"></xs:element>
+      <xs:element name="Arrow_Right" type="xs:int" fixed="25" minOccurs="0"></xs:element>
+      <xs:element name="Arrow_Down" type="xs:int" fixed="26" minOccurs="0"></xs:element>
+      <xs:element name="Select" type="xs:int" fixed="27" minOccurs="0"></xs:element>
+      <xs:element name="Print" type="xs:int" fixed="28" minOccurs="0"></xs:element>
+      <xs:element name="Execute" type="xs:int" fixed="29" minOccurs="0"></xs:element>
+      <xs:element name="Snapshot" type="xs:int" fixed="30" minOccurs="0"></xs:element>
+      <xs:element name="Print_Screen" type="xs:int" fixed="30" minOccurs="0"></xs:element>
+      <xs:element name="Insert" type="xs:int" fixed="31" minOccurs="0"></xs:element>
+      <xs:element name="Delete" type="xs:int" fixed="32" minOccurs="0"></xs:element>
+      <xs:element name="Help" type="xs:int" fixed="33" minOccurs="0"></xs:element>
+      <xs:element name="Number_0" type="xs:int" fixed="34" minOccurs="0"></xs:element>
+      <xs:element name="Number_1" type="xs:int" fixed="35" minOccurs="0"></xs:element>
+      <xs:element name="Number_2" type="xs:int" fixed="36" minOccurs="0"></xs:element>
+      <xs:element name="Number_3" type="xs:int" fixed="37" minOccurs="0"></xs:element>
+      <xs:element name="Number_4" type="xs:int" fixed="38" minOccurs="0"></xs:element>
+      <xs:element name="Number_5" type="xs:int" fixed="39" minOccurs="0"></xs:element>
+      <xs:element name="Number_6" type="xs:int" fixed="40" minOccurs="0"></xs:element>
+      <xs:element name="Number_7" type="xs:int" fixed="41" minOccurs="0"></xs:element>
+      <xs:element name="Number_8" type="xs:int" fixed="42" minOccurs="0"></xs:element>
+      <xs:element name="Number_9" type="xs:int" fixed="43" minOccurs="0"></xs:element>
+      <xs:element name="A" type="xs:int" fixed="44" minOccurs="0"></xs:element>
+      <xs:element name="B" type="xs:int" fixed="45" minOccurs="0"></xs:element>
+      <xs:element name="C" type="xs:int" fixed="46" minOccurs="0"></xs:element>
+      <xs:element name="D" type="xs:int" fixed="47" minOccurs="0"></xs:element>
+      <xs:element name="E" type="xs:int" fixed="48" minOccurs="0"></xs:element>
+      <xs:element name="F" type="xs:int" fixed="49" minOccurs="0"></xs:element>
+      <xs:element name="G" type="xs:int" fixed="50" minOccurs="0"></xs:element>
+      <xs:element name="H" type="xs:int" fixed="51" minOccurs="0"></xs:element>
+      <xs:element name="I" type="xs:int" fixed="52" minOccurs="0"></xs:element>
+      <xs:element name="J" type="xs:int" fixed="53" minOccurs="0"></xs:element>
+      <xs:element name="K" type="xs:int" fixed="54" minOccurs="0"></xs:element>
+      <xs:element name="L" type="xs:int" fixed="55" minOccurs="0"></xs:element>
+      <xs:element name="M" type="xs:int" fixed="56" minOccurs="0"></xs:element>
+      <xs:element name="N" type="xs:int" fixed="57" minOccurs="0"></xs:element>
+      <xs:element name="O" type="xs:int" fixed="58" minOccurs="0"></xs:element>
+      <xs:element name="P" type="xs:int" fixed="59" minOccurs="0"></xs:element>
+      <xs:element name="Q" type="xs:int" fixed="60" minOccurs="0"></xs:element>
+      <xs:element name="R" type="xs:int" fixed="61" minOccurs="0"></xs:element>
+      <xs:element name="S" type="xs:int" fixed="62" minOccurs="0"></xs:element>
+      <xs:element name="T" type="xs:int" fixed="63" minOccurs="0"></xs:element>
+      <xs:element name="U" type="xs:int" fixed="64" minOccurs="0"></xs:element>
+      <xs:element name="V" type="xs:int" fixed="65" minOccurs="0"></xs:element>
+      <xs:element name="W" type="xs:int" fixed="66" minOccurs="0"></xs:element>
+      <xs:element name="X" type="xs:int" fixed="67" minOccurs="0"></xs:element>
+      <xs:element name="Y" type="xs:int" fixed="68" minOccurs="0"></xs:element>
+      <xs:element name="Z" type="xs:int" fixed="69" minOccurs="0"></xs:element>
+      <xs:element name="Windows_Left" type="xs:int" fixed="70" minOccurs="0"></xs:element>
+      <xs:element name="Windows_Right" type="xs:int" fixed="71" minOccurs="0"></xs:element>
+      <xs:element name="Apps" type="xs:int" fixed="72" minOccurs="0"></xs:element>
+      <xs:element name="Sleep" type="xs:int" fixed="73" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_0" type="xs:int" fixed="74" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_1" type="xs:int" fixed="75" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_2" type="xs:int" fixed="76" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_3" type="xs:int" fixed="77" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_4" type="xs:int" fixed="78" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_5" type="xs:int" fixed="79" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_6" type="xs:int" fixed="80" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_7" type="xs:int" fixed="81" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_8" type="xs:int" fixed="82" minOccurs="0"></xs:element>
+      <xs:element name="Numpad_9" type="xs:int" fixed="83" minOccurs="0"></xs:element>
+      <xs:element name="Multiply" type="xs:int" fixed="84" minOccurs="0"></xs:element>
+      <xs:element name="Add" type="xs:int" fixed="85" minOccurs="0"></xs:element>
+      <xs:element name="Separator" type="xs:int" fixed="86" minOccurs="0"></xs:element>
+      <xs:element name="Subtract" type="xs:int" fixed="87" minOccurs="0"></xs:element>
+      <xs:element name="Decimal" type="xs:int" fixed="88" minOccurs="0"></xs:element>
+      <xs:element name="Divide" type="xs:int" fixed="89" minOccurs="0"></xs:element>
+      <xs:element name="F1" type="xs:int" fixed="90" minOccurs="0"></xs:element>
+      <xs:element name="F2" type="xs:int" fixed="91" minOccurs="0"></xs:element>
+      <xs:element name="F3" type="xs:int" fixed="92" minOccurs="0"></xs:element>
+      <xs:element name="F4" type="xs:int" fixed="93" minOccurs="0"></xs:element>
+      <xs:element name="F5" type="xs:int" fixed="94" minOccurs="0"></xs:element>
+      <xs:element name="F6" type="xs:int" fixed="95" minOccurs="0"></xs:element>
+      <xs:element name="F7" type="xs:int" fixed="96" minOccurs="0"></xs:element>
+      <xs:element name="F8" type="xs:int" fixed="97" minOccurs="0"></xs:element>
+      <xs:element name="F9" type="xs:int" fixed="98" minOccurs="0"></xs:element>
+      <xs:element name="F10" type="xs:int" fixed="99" minOccurs="0"></xs:element>
+      <xs:element name="F11" type="xs:int" fixed="100" minOccurs="0"></xs:element>
+      <xs:element name="F12" type="xs:int" fixed="101" minOccurs="0"></xs:element>
+      <xs:element name="F13" type="xs:int" fixed="102" minOccurs="0"></xs:element>
+      <xs:element name="F14" type="xs:int" fixed="103" minOccurs="0"></xs:element>
+      <xs:element name="F15" type="xs:int" fixed="104" minOccurs="0"></xs:element>
+      <xs:element name="F16" type="xs:int" fixed="105" minOccurs="0"></xs:element>
+      <xs:element name="F17" type="xs:int" fixed="106" minOccurs="0"></xs:element>
+      <xs:element name="F18" type="xs:int" fixed="107" minOccurs="0"></xs:element>
+      <xs:element name="F19" type="xs:int" fixed="108" minOccurs="0"></xs:element>
+      <xs:element name="F20" type="xs:int" fixed="109" minOccurs="0"></xs:element>
+      <xs:element name="F21" type="xs:int" fixed="110" minOccurs="0"></xs:element>
+      <xs:element name="F22" type="xs:int" fixed="111" minOccurs="0"></xs:element>
+      <xs:element name="F23" type="xs:int" fixed="112" minOccurs="0"></xs:element>
+      <xs:element name="F24" type="xs:int" fixed="113" minOccurs="0"></xs:element>
+      <xs:element name="NumLock" type="xs:int" fixed="114" minOccurs="0"></xs:element>
+      <xs:element name="Scroll" type="xs:int" fixed="115" minOccurs="0"></xs:element>
+      <xs:element name="Shift_Left" type="xs:int" fixed="116" minOccurs="0"></xs:element>
+      <xs:element name="Shift_Right" type="xs:int" fixed="117" minOccurs="0"></xs:element>
+      <xs:element name="Control_Left" type="xs:int" fixed="118" minOccurs="0"></xs:element>
+      <xs:element name="Control_Right" type="xs:int" fixed="119" minOccurs="0"></xs:element>
+      <xs:element name="Alt_Left" type="xs:int" fixed="120" minOccurs="0"></xs:element>
+      <xs:element name="Alt_Right" type="xs:int" fixed="121" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Back" type="xs:int" fixed="122" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Forward" type="xs:int" fixed="123" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Refresh" type="xs:int" fixed="124" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Stop" type="xs:int" fixed="125" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Search" type="xs:int" fixed="126" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Favorites" type="xs:int" fixed="127" minOccurs="0"></xs:element>
+      <xs:element name="Browser_Home" type="xs:int" fixed="128" minOccurs="0"></xs:element>
+      <xs:element name="Volume_Mute" type="xs:int" fixed="129" minOccurs="0"></xs:element>
+      <xs:element name="Volume_Down" type="xs:int" fixed="130" minOccurs="0"></xs:element>
+      <xs:element name="Volume_Up" type="xs:int" fixed="131" minOccurs="0"></xs:element>
+      <xs:element name="Media_Next" type="xs:int" fixed="132" minOccurs="0"></xs:element>
+      <xs:element name="Media_Previous" type="xs:int" fixed="133" minOccurs="0"></xs:element>
+      <xs:element name="Media_Stop" type="xs:int" fixed="134" minOccurs="0"></xs:element>
+      <xs:element name="Media_Pause" type="xs:int" fixed="135" minOccurs="0"></xs:element>
+      <xs:element name="Launch_Mail" type="xs:int" fixed="136" minOccurs="0"></xs:element>
+      <xs:element name="Media_Select" type="xs:int" fixed="137" minOccurs="0"></xs:element>
+      <xs:element name="Launch_App_1" type="xs:int" fixed="138" minOccurs="0"></xs:element>
+      <xs:element name="Launch_App_2" type="xs:int" fixed="139" minOccurs="0"></xs:element>
+      <xs:element name="Oem_1" type="xs:int" fixed="140" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Semicolon" type="xs:int" fixed="140" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Plus" type="xs:int" fixed="141" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Comma" type="xs:int" fixed="142" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Minus" type="xs:int" fixed="143" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Period" type="xs:int" fixed="144" minOccurs="0"></xs:element>
+      <xs:element name="Oem_2" type="xs:int" fixed="145" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Question" type="xs:int" fixed="145" minOccurs="0"></xs:element>
+      <xs:element name="Oem_3" type="xs:int" fixed="146" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Tilde" type="xs:int" fixed="146" minOccurs="0"></xs:element>
+      <xs:element name="Abnt_C1" type="xs:int" fixed="147" minOccurs="0"></xs:element>
+      <xs:element name="Abnt_C2" type="xs:int" fixed="148" minOccurs="0"></xs:element>
+      <xs:element name="Oem_4" type="xs:int" fixed="149" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Bracket_Open" type="xs:int" fixed="149" minOccurs="0"></xs:element>
+      <xs:element name="Oem_5" type="xs:int" fixed="150" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Pipe" type="xs:int" fixed="150" minOccurs="0"></xs:element>
+      <xs:element name="Oem_6" type="xs:int" fixed="151" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Bracket_Close" type="xs:int" fixed="151" minOccurs="0"></xs:element>
+      <xs:element name="Oem_7" type="xs:int" fixed="152" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Quote" type="xs:int" fixed="152" minOccurs="0"></xs:element>
+      <xs:element name="Oem_8" type="xs:int" fixed="153" minOccurs="0"></xs:element>
+      <xs:element name="Oem_102" type="xs:int" fixed="153" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Backslash" type="xs:int" fixed="154" minOccurs="0"></xs:element>
+      <xs:element name="Ime_Processed" type="xs:int" fixed="155" minOccurs="0"></xs:element>
+      <xs:element name="System" type="xs:int" fixed="156" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Attn" type="xs:int" fixed="157" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Alphanumeric" type="xs:int" fixed="157" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Finish" type="xs:int" fixed="158" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Katakana" type="xs:int" fixed="158" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Copy" type="xs:int" fixed="159" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Hiragana" type="xs:int" fixed="159" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Auto" type="xs:int" fixed="160" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Sbcs_Char" type="xs:int" fixed="160" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Enlw" type="xs:int" fixed="161" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Dbcs_Char" type="xs:int" fixed="161" minOccurs="0"></xs:element>
+      <xs:element name="Oem_BackTab" type="xs:int" fixed="162" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Roman" type="xs:int" fixed="162" minOccurs="0"></xs:element>
+      <xs:element name="Attn" type="xs:int" fixed="163" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_NoRoman" type="xs:int" fixed="163" minOccurs="0"></xs:element>
+      <xs:element name="Cr_Sel" type="xs:int" fixed="164" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Enter_Word_Register_Mode" type="xs:int" fixed="164" minOccurs="0"></xs:element>
+      <xs:element name="Ex_Sel" type="xs:int" fixed="165" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Enter_Ime_Configure_Mode" type="xs:int" fixed="165" minOccurs="0"></xs:element>
+      <xs:element name="Erase_Eof" type="xs:int" fixed="166" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Flush_String" type="xs:int" fixed="166" minOccurs="0"></xs:element>
+      <xs:element name="Play" type="xs:int" fixed="167" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Code_Input" type="xs:int" fixed="167" minOccurs="0"></xs:element>
+      <xs:element name="Zoom" type="xs:int" fixed="168" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_No_Code_Input" type="xs:int" fixed="168" minOccurs="0"></xs:element>      
+      <xs:element name="No_Name" type="xs:int" fixed="169" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Determine_String" type="xs:int" fixed="169" minOccurs="0"></xs:element>
+      <xs:element name="Pa1" type="xs:int" fixed="170" minOccurs="0"></xs:element>
+      <xs:element name="Dbe_Enter_Dialog_Conversion_Mode" type="xs:int" fixed="170" minOccurs="0"></xs:element>
+      <xs:element name="Oem_Clear" type="xs:int" fixed="171" minOccurs="0"></xs:element>
+      <xs:element name="Dead_Char_Processed" type="xs:int" fixed="172" minOccurs="0"></xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="keybindEntry">
+    <xs:sequence>
+      <xs:element name="control">
+        <xs:complexType>
+          <xs:complexContent>
+            <xs:extension base="controlbase">
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="key">
+        <xs:complexType>
+          <xs:complexContent>
+            <xs:extension base="keybase">
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  
+  
+  
+  
+  
+  <xs:element name="config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="connectHistory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ip" type="xs:string" default ="" />
+                  <xs:attribute name="port" type="xs:integer" default ="5757" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="keyFilter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="key" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:complexContent>
+                    <xs:extension base="keybase">
+                    </xs:extension>
+                  </xs:complexContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="keybinds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:complexContent>
+                    <xs:extension base="keybindEntry">
+                    </xs:extension>
+                  </xs:complexContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
+
+  
+ 
+  
+  
+
+ 
+
